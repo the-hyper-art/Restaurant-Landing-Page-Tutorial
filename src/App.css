@@ -29,14 +29,21 @@ nav {
   justify-content: space-between;
   min-height: 90px;
 }
+.nav-logo-container{
+ max-width: 80px;
+ position: relative;
+ top: 18px;
+ left: 10px;
+}
+
 .navbar-menu-container {
   display: none;
 }
 .navbar-links-container a {
-  margin-right: 3rem;
+  margin-right: 1.4rem;
   text-decoration: none;
-  color: black;
-  font-size: 1.1rem;
+  color: #fe9e0d;
+  font-size: 1.4rem;
   font-weight: 600;
 }
 .primary-button {
@@ -73,7 +80,11 @@ nav {
   max-width: 700px;
 }
 .home-image-section {
-  max-width: 600px;
+  max-width: 500px;
+  flex: 1;
+}
+.home-image{
+  max-width: 5px;
   flex: 1;
 }
 .home-text-section {
@@ -82,6 +93,61 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+.horizon-card{
+  margin: auto;
+  position: absolute;
+  left: 0%;
+  top: 25%;
+  
+    padding: 0 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Ikaros Sans", sans-serif;
+    max-width: 520px;
+    min-width: 500px;
+    height: 22rem;
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.256);
+    background: linear-gradient(180deg, rgba(142, 141, 141, 0.5) -36.57%, rgba(217, 217, 217, 0) 141.73%);
+    backdrop-filter: blur(36px);
+}
+.heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction:row;
+}
+.horizon-title h1 {
+  font-size: 4rem;
+  background: linear-gradient(124deg, #1680e8 2%, #2bc9d3 133.32%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.countdown-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2%;
+}
+.w-100 {
+  width: 100% !important;
+}
+.align-items-start {
+  align-items: flex-start !important;
+}
+.flex-column {
+  flex-direction: column !important;
+}
+.d-flex {
+  display: flex !important;
+}
+.fs-4 {
+  font-size: calc(1.275rem + .3vw) !important;
 }
 .primary-heading {
   font-size: clamp(2rem, 5vw, 4rem);
@@ -118,16 +184,11 @@ nav {
   background-color: #e48f0f;
 }
 .about-section-container {
-  margin-top: 20rem;
+  margin-top: 13rem;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.about-background-image-container {
-  position: absolute;
-  left: -150px;
-  z-index: -2;
 }
 .about-section-image-container {
   flex: 0.9;
@@ -214,6 +275,9 @@ nav {
 /* .footer-section-one {
   border: 2px solid blue;
 } */
+.footerFont{
+  font-size: 30px;
+}
 .footer-section-two {
   flex: 1;
   display: flex;
@@ -261,7 +325,7 @@ nav {
   margin-top: 1.5rem;
 }
 .work-section-wrapper {
-  margin-top: 15rem;
+  margin-top: 13rem;
 }
 .work-section-top p {
   text-align: center;
